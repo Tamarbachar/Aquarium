@@ -10,7 +10,7 @@ using System.Drawing;
 namespace HelloWorldWinForms
 {
     [Serializable]
-    internal class shark : Mammal
+    internal class shark : fish
     {
         public const int _buy_shark = 150;
         public const int _sell_shark = 70;
