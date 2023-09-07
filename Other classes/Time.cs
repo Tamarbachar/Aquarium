@@ -64,7 +64,6 @@ namespace HelloWorldWinForms
         }
 
         public static Time operator +(Time a, int b) => new Time(a._hours + b, a._days);
-        public static Time operator -(Time a, int b) => new Time(a._hours - b, a._days);
-
+      
     }
 }
