@@ -81,13 +81,13 @@ namespace HelloWorldWinForms
         }
         public override void updateStats()
         {
-            if (_hunger - 3 <= 0 || _health - 1 <= 0 || _thirst - 5 <= 0)
+            if (_hunger - 3 <= 0 || _health - 1 <= 0 || _affection - 5 <= 0)
                 _isAlive = false;
             else
             {
                 _lactatingCounter++;
                 _hunger -= 3;
-                _thirst -= 5;
+                _affection -= 5;
                 _health -= 1;
                 if (_lactatingCounter == 24)
                 {
