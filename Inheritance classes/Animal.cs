@@ -17,7 +17,7 @@ namespace HelloWorldWinForms
         public Time _age;
         public  int _id, _spieces;
 
-         protected int _thirst,
+         protected int _affection,
             _hunger,
             _health;
         protected Vector _coordinates, _direction;
@@ -54,10 +54,10 @@ namespace HelloWorldWinForms
         }
         public void affectionAnimal()
         {
-            if (_thirst + 30 <= 300)
-                _thirst += 30;
+            if (_affection + 30 <= 300)
+                _affection += 30;
             else
-                _thirst = 300;
+                _affection = 300;
         }
         public void healAnimal()
         {
